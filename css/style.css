@@ -50,7 +50,7 @@ section {
 }
 .heading img {
   height: 3rem;
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
 }
 .heading h3 {
   font-size: 4rem;
@@ -155,9 +155,55 @@ section {
 }
 .facility .box-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(27rem, 1fr));
   gap: 1.5rem;
   align-items: flex-start;
+}
+.facility .box-container .box {
+  text-align: center;
+}
+.facility .box-container .box img {
+  height: 10rem;
+  margin-bottom: 0.5rem;
+}
+.facility .box-container .box h3 {
+  font-size: 2rem;
+  color: var(--balck);
+  margin: 1rem 0;
+}
+.facility .box-container .box p {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  color: var(--light-color);
+}
+.menu .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 30rem);
+  gap: 2rem;
+  align-items: flex-start;
+  justify-content: center;
+}
+.menu .box-container .box {
+  text-align: center;
+}
+.menu .box-container .box img {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.menu .box-container .box h3 {
+  font-size: 2rem;
+  color: var(--balck);
+}
+.gallery .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 33rem);
+  gap: 1.5rem;
+  justify-content: center;
+}
+.gallery .box-container img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 /* media queries */
 @media (max-width: 991px) {
@@ -206,5 +252,11 @@ section {
 @media (max-width: 450px) {
   html {
     font-size: 50%;
+  }
+  .heading img {
+    height: 3rem;
+  }
+  .heading h3 {
+    font-size: 3rem;
   }
 }

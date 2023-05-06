@@ -205,6 +205,55 @@ section {
   width: 100%;
   object-fit: cover;
 }
+.team .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 33rem);
+  gap: 1.5rem;
+  justify-content: center;
+}
+.team .box-container .box {
+  text-align: center;
+}
+.team .box-container .box img {
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: 0.5rem;
+}
+.team .box-container .box h3 {
+  font-size: 2rem;
+  color: var(--balck);
+}
+.contact .row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.contact .row .image {
+  flex: 1 1 50rem;
+}
+.contact .row .image img {
+  width: 100%;
+}
+.contact .row form {
+  flex: 1 1 30rem;
+  border: var(--border);
+  padding: 2rem;
+  text-align: center;
+}
+.contact .row form h3 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--balck);
+}
+.contact .row form .box {
+  width: 100%;
+  padding: 1.4rem;
+  font-size: 1.8rem;
+  color: var(--balck);
+  border: var(--border);
+  margin: 1rem 0;
+}
 /* media queries */
 @media (max-width: 991px) {
   html {

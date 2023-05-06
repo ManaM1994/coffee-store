@@ -65,7 +65,7 @@
     <!-- about section ends -->
 
     <!-- facility section starts -->
-    <section class="facility">
+    <section class="facility" id="facility">
       <div class="heading">
         <img src="" />
         <h3>our facilities</h3>
@@ -108,7 +108,7 @@
     <!-- facility section ends -->
 
     <!-- menu section starts -->
-    <section class="menu">
+    <section class="menu" id="menu">
       <div class="heading">
         <img src="" />
         <h3>our menu</h3>
@@ -143,7 +143,7 @@
     <!-- menu section ends -->
 
     <!-- gallery section starts -->
-    <section class="gallery">
+    <section class="gallery" id="gallery">
       <div class="heading">
         <img src="" />
         <h3>Our gallery</h3>
@@ -160,7 +160,7 @@
     <!-- gallery section ends -->
 
     <!-- team section starts -->
-    <section class="team">
+    <section class="team" id="team">
       <div class="heading">
         <img src="" />
         <h3>Our Team</h3>
@@ -175,24 +175,85 @@
           <h3>John doe</h3>
         </div>
         <div class="box">
-          <img src="" />
+          <img src="./images/team-3.jpg" />
           <h3>John doe</h3>
         </div>
         <div class="box">
-          <img src="" />
+          <img src="./images/team-4.jpg" />
           <h3>John doe</h3>
         </div>
         <div class="box">
-          <img src="" />
+          <img src="./images/team-5.jpg" />
           <h3>John doe</h3>
         </div>
         <div class="box">
-          <img src="" />
+          <img src="./images/team-6.jpg" />
           <h3>John doe</h3>
         </div>
       </div>
     </section>
     <!-- team section ends -->
+
+    <!-- contact section starts -->
+    <section class="contact" id="contact">
+      <div class="heading">
+        <img src="" />
+        <h3>Contact us</h3>
+      </div>
+      <div class="row">
+        <div class="image">
+          <img src="./images/contact.svg" />
+        </div>
+        <form action="" method="post">
+          <h3>book a table</h3>
+          <input
+            type="text"
+            name="name"
+            required
+            class="box"
+            maxlength="20"
+            placeholder="enter your name"
+          />
+          <input
+            type="number"
+            name="number"
+            required
+            class="box"
+            maxlength="20"
+            placeholder="enter your number"
+            min="0"
+            max="999999999"
+            onkeypress="if(this.value.length==10) return false"
+          />
+          <input
+            type="number"
+            name="guests"
+            required
+            class="box"
+            maxlength="20"
+            placeholder="How many guests?"
+            min="0"
+            max="99"
+            onkeypress="if(this.value.length==2) return false"
+          />
+          <input type="submit" name="send" value="send message" class="btn" />
+        </form>
+      </div>
+    </section>
+    <!-- contact section ends -->
+
+    <!-- footer section starts -->
+    <section class="footer">
+      <div class="box-container">
+        <div class="box">
+          <i class="fas fa-envelope"></i>
+          <h3>our email address</h3>
+          <p>mana1994@gmail.com</p>
+          <p>mana.mobahi@yahoo.com</p>
+        </div>
+      </div>
+    </section>
+    <!-- footer section endss -->
 
     <!-- custom js file link -->
     <script src="./javascript/script.js"></script>
